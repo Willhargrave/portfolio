@@ -13,7 +13,7 @@ function Personal() {
         </div>
         <div className="personal">
             <PersonalCard />
-            <img src={japanex} className="personal-img"/>
+            <img src={japanex} alt="personal"className="personal-img"/>
             <TravelCard />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import "./style/Project.css"
 import ProjectCard from "./ProjectCard";
 import ProjectItems from "./ProjectItems";
-function Skills() {
+function Projects() {
 
   return (
     <div>
@@ -15,4 +15,4 @@ function Skills() {
   )
 }
 
-export default Skills;
+export default Projects;
