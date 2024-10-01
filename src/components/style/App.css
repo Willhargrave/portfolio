@@ -1,7 +1,7 @@
 body {
-  background: -webkit-linear-gradient(360deg, #dee1e1 10%, #f4f4f4 360%);
-  font-weight: 100;
-}
-html {
-  scroll-behavior: smooth;
-}
+    background: -webkit-linear-gradient(360deg, #dee1e1 10%, #f4f4f4 360%);
+    font-weight: 100;
+  }
+  html {
+    scroll-behavior: smooth;
+  }

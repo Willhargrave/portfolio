@@ -1,12 +1,13 @@
-import "./style/navbar.css"
 function Navbar() {
   return (
     <div>
-      <header className="navbar">
-        <a href="#about">Home</a>
-        <a href="#project">Projects</a>
-        <a href="#skill">Skills</a>
-        <a href="#personal">Personal</a>
+      <header className="fixed top-0 w-full h-5 flex justify-end items-center bg-gradient-to-r from-[#dee1e1] to-[#f4f4f4] z-50">
+        <nav>
+          <a href="#about" className="text-black no-underline mx-1 hover:text-gray-600 transition-colors duration-200">Home</a>
+          <a href="#project" className="text-black no-underline mx-1 hover:text-gray-600 transition-colors duration-200">Projects</a>
+          <a href="#skill" className="text-black no-underline mx-1 hover:text-gray-600 transition-colors duration-200">Skills</a>
+          <a href="#personal" className="text-black no-underline mx-1 hover:text-gray-600 transition-colors duration-200">Personal</a>
+        </nav>
       </header>
     </div>
   )
