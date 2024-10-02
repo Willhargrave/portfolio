@@ -8,15 +8,19 @@ function About() {
                 <hr className="border-black" />
                 Full Stack Engineer
               </h1>
-              <div className="relative inline-block">
-                <img 
-                  src={require('./images/profile.jpg')} 
-                  alt="profile" 
-                  className="h-[300px] w-[350px] object-cover border-[5vmin] border-solid border-gray-200 border-b-white border-t-gray-300 rounded-sm shadow-[0_0_5px_0_rgba(0,0,0,0.25)_inset,_0_5px_10px_5px_rgba(0,0,0,0.25)]"
-                />
-                <div className="absolute inset-[-2vmin] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)_inset]"></div>
-                <div className="absolute inset-[-2.5vmin] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)]"></div>
-              </div>
+              <div className="relative inline-block w-[350px] h-[300px]">
+                <div className="absolute inset-0 border-[5vmin] border-solid border-gray-200 border-b-white border-t-gray-300 rounded-sm shadow-[0_0_5px_0_rgba(0,0,0,0.25)_inset,_0_5px_10px_5px_rgba(0,0,0,0.25)]">
+                  <div className="absolute inset-[5vmin] overflow-hidden">
+                    <img
+                      src={require('./images/profile.jpg')}
+                      alt="profile"
+                      className="w-full h-full object-cover object-[center_top]"
+                    />
+                  </div>
+                </div>
+              <div className="absolute inset-[-2vmin] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)_inset]"></div>
+              <div className="absolute inset-[-2.5vmin] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)]"></div>
+            </div>
             </div>
             <p className="text-3xl font-thin">
               Born in the UK, living in Tokyo, please take a look at some the projects I've been working on!
