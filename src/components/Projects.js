@@ -21,8 +21,10 @@ const Projects = () => {
       <h2 id="project" className="text-4xl font-semibold text-center mb-4">Projects</h2>
       <hr className="w-1/3 mx-auto my-6 border-gray-300" />
       <p className="text-xl text-center mb-12">Here are some of the projects I've worked on</p>
-      <div className="relative">
-        <ProjectCard Project={ProjectItems[currentIndex]} />
+      <div className="relative max-w-[1600px] mx-auto">
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <ProjectCard Project={ProjectItems[currentIndex]} />
+        </div>
         <button onClick={prevProject} className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-3 rounded-full shadow-lg hover:bg-opacity-75 transition-all">
           <ChevronLeft size={32} />
         </button>
