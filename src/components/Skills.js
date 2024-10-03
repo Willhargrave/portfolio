@@ -1,4 +1,4 @@
-import SkillItems from "./SkillItems";
+import SkillItems from "../data/SkillItems";
 import SkillCard from "./SkillCard";
 function Skills() {
   return (

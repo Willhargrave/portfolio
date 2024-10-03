@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ProjectCard from "./ProjectCard";
-import ProjectItems from "./ProjectItems";
+import ProjectItems from "../data/ProjectItems";
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Import icons
 
 
