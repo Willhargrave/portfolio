@@ -1,8 +1,7 @@
 function About() {
   return (
-    <div className="container mt-20 mx-auto px-4 py-16 max-w-6xl mb-[500px]" id="about">
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12">
-        <div className="lg:w-2/3">
+        <div className="lg:w-full">
           <h1 className="text-8xl font-light text-black mb-6">
             Will Hargrave
             <hr className="border-black my-4 w-3/4" />
@@ -32,22 +31,19 @@ function About() {
             </button>
           </div>
         </div>
-        <div className="lg:w-1/3">
-          <div className="relative w-[450px] h-[450px]">
-            <div className="absolute inset-0 border-[15px] border-solid border-gray-200 border-b-white border-t-gray-300 rounded-sm shadow-[0_0_5px_0_rgba(0,0,0,0.25)_inset,_0_5px_10px_5px_rgba(0,0,0,0.25)]">
-              <div className="absolute inset-0 overflow-hidden">
-                <img
-                  src={require('./images/profile.jpg')}
-                  alt="profile"
-                  className="w-full h-full object-cover object-[center_top]"
-                />
-              </div>
-            </div>
-            <div className="absolute inset-[-8px] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)_inset]"></div>
-            <div className="absolute inset-[-10px] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)]"></div>
-          </div>
+        <div className="lg:w-full flex justify-center items-center">
+      <div className="relative w-[300px] h-[300px] lg:w-[450px] lg:h-[450px]">
+        <div className="absolute inset-0 border-[15px] border-solid border-gray-200 border-b-white border-t-gray-300 rounded-sm shadow-[0_0_5px_0_rgba(0,0,0,0.25)_inset,_0_5px_10px_5px_rgba(0,0,0,0.25)]">
+          <img
+            src={require('./images/profile.jpg')}
+            alt="profile"
+            className="w-full h-full object-cover object-[center_top]"
+          />
         </div>
+        <div className="absolute inset-[-8px] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)_inset]"></div>
+        <div className="absolute inset-[-10px] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)]"></div>
       </div>
+    </div>
     </div>
   )
 }
