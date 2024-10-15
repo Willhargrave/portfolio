@@ -1,3 +1,4 @@
+import Button from './Button';
 const About = () => {
   return (
     <div className="flex flex-col items-center lg:items-start">
@@ -23,24 +24,18 @@ const About = () => {
     </div>
     
     <div className="flex flex-col gap-4 w-full lg:w-48">
-      <a
-        className="w-full text-center cursor-pointer text-base font-semibold rounded-lg px-6 py-3 border border-gray-800 transition-all duration-200 bg-white text-gray-800 hover:border-black hover:bg-gray-100"
-        href="https://www.linkedin.com/in/will-r-hargrave/"
-      >
-        LinkedIn
-      </a>
-      <a
-        className="w-full text-center cursor-pointer text-base font-semibold rounded-lg px-6 py-3 border border-gray-800 transition-all duration-200 bg-white text-gray-800 hover:border-black hover:bg-gray-100"
-        href="https://github.com/Willhargrave"
-      >
-        GitHub
-      </a>
-      <button
-        className="w-full text-center cursor-pointer text-base font-semibold rounded-lg px-6 py-3 border border-gray-800 transition-all duration-200 bg-white text-gray-800 hover:border-black hover:bg-gray-100"
-        onClick={() => window.location.href = 'mailto:willhargrave52@gmail.com'}
-      >
-        Contact Me
-      </button>
+    <Button href="https://www.linkedin.com/in/will-r-hargrave/">
+            LinkedIn
+          </Button>
+          <Button href="https://github.com/Willhargrave">
+            GitHub
+          </Button>
+          <Button onClick={() => window.location.href = 'mailto:willhargrave52@gmail.com'}>
+            Contact Me
+          </Button>
+          <Button href="https://docs.google.com/document/d/1cPeCaW2E0kzS40zvOsKr4YIik9IQadbq/edit?usp=sharing&ouid=108260470277181036486&rtpof=true&sd=true">
+            Resume
+          </Button>
     </div>
   </div>
 </div>
