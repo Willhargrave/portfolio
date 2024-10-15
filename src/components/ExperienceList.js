@@ -2,7 +2,7 @@ import experiences from "../data/ExperienceItems";
 
 const ExperienceList = () => {
   return (
-    <div className="w-full bg-white rounded-lg shadow-md p-6 mt-8 lg:mt-0">
+    <div className="w-full bg-white rounded-lg shadow-md p-6 my-8 lg:my-32">
       <h2 className="text-3xl font-semibold mb-6">Work Experience</h2>
       <div className="overflow-y-auto max-h-[calc(100vh-300px)] pr-2">
         {experiences.map((job, index) => (

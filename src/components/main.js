@@ -12,12 +12,12 @@ function Main() {
             <div className="lg:w-1/2">
             <About />
             </div>
-            <div className="lg:w-1/2 mt-8 lg:mt-0">
+            <div className="lg:w-1/2 flex items-center lg:h-full">
             <ExperienceList />
             </div>
             </div>
             </div>
-            <div className="mt-24">
+            <div className="mt-32">
             <Project />
             <Skills />
             </div>
