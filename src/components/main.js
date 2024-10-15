@@ -17,8 +17,10 @@ function Main() {
             </div>
             </div>
             </div>
+            <div className="mt-24">
             <Project />
             <Skills />
+            </div>
             
         </div>
     )
