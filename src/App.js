@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Main from "./components/Main";
-import Loading from "./components/Loading";
+import Main from "./components/layout/Main";
+import Loading from "./components/common/Loading";
 import "./components/style/App.css"
 
 const App = () => {

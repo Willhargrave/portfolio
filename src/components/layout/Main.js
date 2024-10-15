@@ -1,8 +1,8 @@
 import Navbar from "./Navbar"
-import Skills from "./Skills"
-import About from "./About"
-import Project from "./Projects"
-import ExperienceList from "./ExperienceList"
+import Skills from "../Skills"
+import About from "../About"
+import Project from "../Projects"
+import ExperienceList from "../ExperienceList"
 function Main() {
     return (
         <div>

@@ -1,4 +1,4 @@
-import Button from './Button';
+import Button from './common/Button';
 const About = () => {
   return (
     <div className="flex flex-col items-center lg:items-start">
