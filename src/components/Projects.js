@@ -31,9 +31,9 @@ const Projects = () => {
   
   return (
     <div className="mt-24 mb-32">
-      <h2 id="project" className="text-4xl font-semibold text-center mb-4">Projects</h2>
+      <h2 id="project" className="text-4xl font-bold text-center mb-4">Projects</h2>
       <hr className="w-1/3 mx-auto my-6 border-gray-300" />
-      <p className="text-xl text-center mb-12">Here are some of the projects I've worked on</p>
+      <p className="text-xl font-semibold text-center mb-12">Personal projects that I've done to develop my skills and trying out new languages</p>
       <div className="relative max-w-[1600px] mx-auto overflow-hidden">
         <div 
           className="flex transition-transform duration-500 ease-in-out"

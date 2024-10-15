@@ -1,14 +1,27 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import Main from "./components/Main";
+import Loading from "./components/Loading";
 import "./components/style/App.css"
 
-class App extends Component {
-  render() {
+const App = () => {
+const [isLoading, setIsLoading] = useState(true);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setIsLoading(false);
+  }, 2000)
+
+  return () => clearTimeout(timer);
+}, []);
+
     return (
-    <div>
+    <div className="relative">
+      {isLoading && <Loading />}
+      <div className={`transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
       <Main />
+      </div>
     </div>
    )} ;
-}
+
 
 export default App;
