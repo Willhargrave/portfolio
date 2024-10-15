@@ -1,11 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import ProjectCard from "./ProjectCard";
 import ProjectItems from "../data/ProjectItems";
-import { ChevronLeft, ChevronRight } from 'lucide-react'; // Import icons
+import useScrollAnimation from './hooks/useScrollingLoad';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import {motion} from 'framer-motion'
 
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [projectsRef, isVisible] = useScrollAnimation({threshold: 0.1})
   const [isAnimating, setIsAnimating] = useState(false)
 
   const nextProject = () => {
@@ -30,11 +33,16 @@ const Projects = () => {
 
   
   return (
-    <div className="mt-24 mb-32">
+    <div className="mt-32 mb-32">
       <h2 id="project" className="text-4xl font-bold text-center mb-4">Projects</h2>
       <hr className="w-1/3 mx-auto my-6 border-gray-300" />
       <p className="text-xl font-semibold text-center mb-12">Personal projects that I've done to develop my skills and trying out new languages</p>
-      <div className="relative max-w-[1600px] mx-auto overflow-hidden">
+      <motion.div
+       ref={projectsRef}
+       initial={{ opacity: 0, y: 50 }}
+       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
+       transition={{ duration: 1 }}
+      className="relative max-w-[1600px] mx-auto overflow-hidden">
         <div 
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -61,7 +69,7 @@ const Projects = () => {
         >
           <ChevronRight size={32} />
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 };
