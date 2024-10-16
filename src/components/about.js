@@ -27,7 +27,7 @@ const About = ({nameLoaded, titleLoaded, infoLoaded, imageLoaded}) => {
   return (
     <div className="flex flex-col items-center lg:items-start">
         <motion.h1 
-        className="text-6xl lg:text-7xl font-light text-black mb-6"
+        className="font-cinzel text-6xl lg:text-7xl font-light text-black mb-6"
         initial={{opacity: 0, y: 20}}
         animate={{opacity: nameLoaded ? 1 : 0, y: nameLoaded ? 0: 20}}
         transtion={{duration: 0.5}}
@@ -40,10 +40,10 @@ const About = ({nameLoaded, titleLoaded, infoLoaded, imageLoaded}) => {
           animate={{ opacity: titleLoaded ? 1 : 0, y: titleLoaded ? 0 : 20 }}
           transition={{ duration: 0.5 }}
           >
-          <span className="text-4xl lg:text-5xl">Full Stack Engineer</span>
+          <span className="font-roboto text-4xl lg:text-5xl">Full Stack Engineer</span>
           </motion.div>
       <motion.p 
-        className="text-xl lg:text-2xl font-light mb-8"
+        className="mt-2 font-roboto text-xl lg:text-2xl font-light mb-8"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: infoLoaded ? 1 : 0, y: infoLoaded ? 0 : 20 }}
         transition={{ duration: 0.5 }}
@@ -68,7 +68,6 @@ const About = ({nameLoaded, titleLoaded, infoLoaded, imageLoaded}) => {
       <div className="absolute inset-[-8px] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)_inset]"></div>
       <div className="absolute inset-[-10px] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)]"></div>
     </motion.div>
-    
     <motion.div 
     className="flex flex-col gap-8 mt-6 lg:mt-0 lg:ml-4"
     variants={containerVariants}

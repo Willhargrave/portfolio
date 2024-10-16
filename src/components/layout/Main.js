@@ -11,13 +11,12 @@ const loadedComponents = useCascadingLoad(5)
         <div>
         <AnimatedBackground />
             <Navbar />
-            <div className="flex flex-col min-h-screen">
-      <main className="flex-grow">
-        <section className="py-16 bg-gray-100">
+        <div className="flex flex-col min-h-screen">
+        <main className="flex-grow">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row justify-between items-start gap-12">
-              <div className="lg:w-1/2">
-
+              <div className="mt-8 lg:w-1/2">
             <About 
             nameLoaded={loadedComponents.includes(0)}
             titleLoaded={loadedComponents.includes(1)}

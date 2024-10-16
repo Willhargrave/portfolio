@@ -3,7 +3,7 @@ import SkillCard from "./common/SkillCard";
 function Skills() {
   return (
     <div className="mt-12 mb-24">
-      <h2 id="skill" className="text-3xl font-semibold text-center">Skills</h2>
+      <h2 className="font-cinzel text-6xl font-bold text-center mb-8">Skills</h2>
       <hr className="w-1/2 mx-auto my-4 border-gray-300" />
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white to-transparent z-10"></div>

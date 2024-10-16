@@ -34,9 +34,9 @@ const Projects = () => {
   
   return (
     <div className="mt-[200px] mb-32">
-      <h2 className="text-4xl font-bold text-center mb-4">Projects</h2>
+      <h2 className="font-cinzel text-6xl font-bold text-center mb-4">Projects</h2>
       <hr className="w-1/3 mx-auto my-6 border-gray-300" />
-      <p className="text-xl font-semibold text-center mb-12">Personal projects that I've done to develop my skills and trying out new languages</p>
+      <p className="font-roboto text-2xl font-semibold text-center mb-12">Personal projects that I've done to develop my skills and trying out new languages</p>
       <motion.div
        ref={projectsRef}
        initial={{ opacity: 0, y: 50 }}
@@ -49,7 +49,7 @@ const Projects = () => {
         >
           {ProjectItems.map((project, index) => (
             <div key={index} className="w-full flex-shrink-0">
-              <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="p-6 rounded-lg shadow-md">
                 <ProjectCard Project={project} />
               </div>
             </div>

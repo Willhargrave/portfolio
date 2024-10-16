@@ -8,7 +8,7 @@ const SkillCard = (props) => {
         <div className="absolute inset-[-2vmin] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)_inset]"></div>
         <div className="absolute inset-[-2.5vmin] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)]"></div>
       </div>
-      <h3 className="mt-4 text-xl font-medium text-center">{props.Skill.name}</h3>
+      <h3 className="mt-4 text-xl font-cinzel font-bold text-center">{props.Skill.name}</h3>
     </div>
   )
 }
