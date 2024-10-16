@@ -1,5 +1,5 @@
 import SkillItems from "../data/SkillItems";
-import SkillCard from "./SkillCard";
+import SkillCard from "./common/SkillCard";
 function Skills() {
   return (
     <div className="mt-12 mb-24">

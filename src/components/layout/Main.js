@@ -4,14 +4,20 @@ import About from "../About"
 import Project from "../Projects"
 import ExperienceList from "../ExperienceList"
 import useCascadingLoad from "../hooks/useCascadingLoad"
+import AnimatedBackground from "../common/AnimatedBackground"
 function Main() {
 const loadedComponents = useCascadingLoad(5)
     return (
         <div>
+        <AnimatedBackground />
             <Navbar />
-            <div className="container mx-auto px-4 py-16 max-w-7xl">
+            <div className="flex flex-col min-h-screen">
+      <main className="flex-grow">
+        <section className="py-16 bg-gray-100">
+          <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row justify-between items-start gap-12">
-            <div className="lg:w-1/2">
+              <div className="lg:w-1/2">
+
             <About 
             nameLoaded={loadedComponents.includes(0)}
             titleLoaded={loadedComponents.includes(1)}
@@ -23,13 +29,17 @@ const loadedComponents = useCascadingLoad(5)
             <ExperienceList loaded={loadedComponents.includes(4)} />
             </div>
             </div>
-            </div>
-            <div className="mt-32">
+          </div>
+        </section>
+            <section className="py-16">
+          <div className="container mx-auto px-4">
             <Project />
+          </div>
+        </section>
             <Skills />
-            </div>
-            
+        </main>
         </div>
+        </div> 
     )
 };
 

@@ -91,7 +91,7 @@ const About = ({nameLoaded, titleLoaded, infoLoaded, imageLoaded}) => {
           </Button>
         </motion.div>
         <motion.div variants={buttonVariants} custom={3}>
-          <Button href="/path-to-your-resume.pdf">
+          <Button href="https://docs.google.com/document/d/1cPeCaW2E0kzS40zvOsKr4YIik9IQadbq/edit?usp=sharing&ouid=108260470277181036486&rtpof=true&sd=true">
             Resume
           </Button>
         </motion.div>

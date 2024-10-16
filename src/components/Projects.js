@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./common/ProjectCard";
 import ProjectItems from "../data/ProjectItems";
 import useScrollAnimation from './hooks/useScrollingLoad';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -33,8 +33,8 @@ const Projects = () => {
 
   
   return (
-    <div className="mt-32 mb-32">
-      <h2 id="project" className="text-4xl font-bold text-center mb-4">Projects</h2>
+    <div className="mt-[200px] mb-32">
+      <h2 className="text-4xl font-bold text-center mb-4">Projects</h2>
       <hr className="w-1/3 mx-auto my-6 border-gray-300" />
       <p className="text-xl font-semibold text-center mb-12">Personal projects that I've done to develop my skills and trying out new languages</p>
       <motion.div
