@@ -1,6 +1,29 @@
 import Button from './common/Button';
 import {motion} from 'framer-motion'
 const About = ({nameLoaded, titleLoaded, infoLoaded, imageLoaded}) => {
+
+  const buttonVariants = {
+    hidden: {opacity: 0, x: -20},
+    visible: i => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: i * 0.3,
+        duration: 0.5,
+      },
+    }),
+  };
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+        delayChildren: 0.3, 
+      },
+    },
+  };
   return (
     <div className="flex flex-col items-center lg:items-start">
         <motion.h1 
@@ -46,20 +69,33 @@ const About = ({nameLoaded, titleLoaded, infoLoaded, imageLoaded}) => {
       <div className="absolute inset-[-10px] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)]"></div>
     </motion.div>
     
-    <div className="flex flex-col gap-4 w-full lg:w-48">
-    <Button href="https://www.linkedin.com/in/will-r-hargrave/">
+    <motion.div 
+    className="flex flex-col gap-8 mt-6 lg:mt-0 lg:ml-4"
+    variants={containerVariants}
+    initial="hidden"
+    animate={imageLoaded ? "visible" : "hidden"}
+    >
+     <motion.div variants={buttonVariants} custom={0}>
+          <Button href="https://www.linkedin.com/in/will-r-hargrave/">
             LinkedIn
           </Button>
+        </motion.div>
+        <motion.div variants={buttonVariants} custom={1}>
           <Button href="https://github.com/Willhargrave">
             GitHub
           </Button>
+        </motion.div>
+        <motion.div variants={buttonVariants} custom={2}>
           <Button onClick={() => window.location.href = 'mailto:willhargrave52@gmail.com'}>
             Contact Me
           </Button>
-          <Button href="https://docs.google.com/document/d/1cPeCaW2E0kzS40zvOsKr4YIik9IQadbq/edit?usp=sharing&ouid=108260470277181036486&rtpof=true&sd=true">
+        </motion.div>
+        <motion.div variants={buttonVariants} custom={3}>
+          <Button href="/path-to-your-resume.pdf">
             Resume
           </Button>
-    </div>
+        </motion.div>
+    </motion.div>
   </div>
 </div>
   );
