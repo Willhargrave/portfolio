@@ -2,7 +2,7 @@ import Navbar from "./Navbar"
 import Skills from "../Skills"
 import About from "../About"
 import Project from "../Projects"
-import ExperienceList from "../ExperienceList"
+import ExperienceList from "../common/ExperienceCard"
 import useCascadingLoad from "../hooks/useCascadingLoad"
 import AnimatedBackground from "../common/AnimatedBackground"
 function Main() {

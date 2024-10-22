@@ -1,4 +1,4 @@
-import experiences from "../data/ExperienceItems";
+import experiences from "../../data/ExperienceItems";
 import {motion} from 'framer-motion'
 const ExperienceList = ({loaded}) => {
   return (

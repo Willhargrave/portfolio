@@ -8,11 +8,10 @@ const ProjectCard = ({ Project }) => {
           <div className="absolute inset-[-2.5vmin] rounded-sm shadow-[0_2px_5px_0_rgba(0,0,0,0.25)]"></div>
         </div>
       </div>
-      <div className="lg:w-2/5 bg-white p-8">
-        <h2 className="text-4xl font-cinzel font-semibold mb-6">{Project.name}</h2>
-        <p className="text-2xl text-gray-600 mb-6">{Project.info}</p>
-        <h3 className="text-3xl font-semibold mb-4">Tech Stack:</h3>
-        <p className="text-2xl text-gray-600">{Project.stack}</p>
+      <div className="max-w-xs bg-stone-50 p-6 shadow-md border border-stone-200">
+        <h2 className="text-4xl font-cinzel font-bold mb-1">{Project.name}</h2>
+        <p className="font-roboto text-sm text-gray-600 mb-3">{Project.stack}</p>
+        <p className="text-2xl font-roboto leading-snug">{Project.info}</p>
       </div>
     </div>
   );
