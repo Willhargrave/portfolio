@@ -1,5 +1,7 @@
 import Button from './common/Button';
 import {motion} from 'framer-motion'
+import { FaLinkedin, FaGithubSquare, FaMailBulk, FaFileAlt } from "react-icons/fa";
+
 const About = ({nameLoaded, titleLoaded, infoLoaded, imageLoaded}) => {
 
   const buttonVariants = {
@@ -60,7 +62,7 @@ const About = ({nameLoaded, titleLoaded, infoLoaded, imageLoaded}) => {
       >
       <div className="absolute inset-0 border-[15px] border-solid border-gray-200 border-b-white border-t-gray-300 rounded-sm shadow-[0_0_5px_0_rgba(0,0,0,0.25)_inset,_0_5px_10px_5px_rgba(0,0,0,0.25)]">
         <img
-          src={require('./images/profile.jpg')}
+          src={require('./images/profile-picture.jpg')}
           alt="profile"
           className="w-full h-full object-cover object-[center_top]"
         />
@@ -76,22 +78,26 @@ const About = ({nameLoaded, titleLoaded, infoLoaded, imageLoaded}) => {
     >
      <motion.div variants={buttonVariants} custom={0}>
           <Button href="https://www.linkedin.com/in/will-r-hargrave/">
-            LinkedIn
+          <FaLinkedin size={20}/>
+           <span>LinkedIn</span> 
           </Button>
         </motion.div>
         <motion.div variants={buttonVariants} custom={1}>
           <Button href="https://github.com/Willhargrave">
-            GitHub
+          <FaGithubSquare size={20} />
+          <span>Github</span> 
           </Button>
         </motion.div>
         <motion.div variants={buttonVariants} custom={2}>
           <Button onClick={() => window.location.href = 'mailto:willhargrave52@gmail.com'}>
-            Contact Me
+          <FaMailBulk size={20}/>
+          <span>Contact Me</span> 
           </Button>
         </motion.div>
         <motion.div variants={buttonVariants} custom={3}>
           <Button href="https://docs.google.com/document/d/1cPeCaW2E0kzS40zvOsKr4YIik9IQadbq/edit?usp=sharing&ouid=108260470277181036486&rtpof=true&sd=true">
-            Resume
+          <FaFileAlt size={20}/>
+          <span>Resume</span> 
           </Button>
         </motion.div>
     </motion.div>

@@ -10,7 +10,7 @@ const ProjectCard = ({ Project }) => {
       </div>
       <div className="max-w-xs bg-stone-50 p-6 shadow-md border border-stone-200">
         <h2 className="text-4xl font-cinzel font-bold mb-1">{Project.name}</h2>
-        <p className="font-roboto text-sm text-gray-600 mb-3">{Project.stack}</p>
+        <p className="font-roboto text-sm text-gray-600 mb-3">{Project.stack.join(' | ')}</p>
         <p className="text-2xl font-roboto leading-snug">{Project.info}</p>
       </div>
     </div>
