@@ -9,21 +9,28 @@ const ExperienceList = ({loaded}) => {
     animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 20 }}
     transition={{ duration: 0.5 }}
     >
-      <h2 className="text-3xl font-cinzel font-semibold mb-6">Work Experience</h2>
-      <div className="overflow-y-auto max-h-[calc(100vh-300px)] pr-2">
-        {experiences.map((job, index) => (
-          <div key={index} className="mb-8 last:mb-0">
-            <h3 className="text-xl font-cinzel font-medium">{job.title}</h3>
-            <p className="text-lg font-cinzel">{job.company}</p>
-            <p className="text-md font-roboto mb-2">{job.date}</p>
-            <ul className="list-disc list-inside">
-              {job.responsibilities.map((resp, idx) => (
-                <li key={idx} className="text-md font-roboto mb-1">{resp}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+     <h2 className="text-3xl font-cinzel font-semibold mb-6">Work Experience</h2>
+<div className="overflow-y-auto max-h-[calc(100vh-300px)] pr-2">
+  {experiences.map((job, index) => (
+    <div key={index} className="mb-8 last:mb-0">
+      <h3 className="text-xl font-cinzel font-medium">{job.title}</h3>
+      <p className="text-lg font-cinzel">{job.company}</p>
+      <p className="text-md font-roboto mb-2">{job.date}</p>
+      {job.responsibilities.map((section, idx) => (
+        <div key={idx} className="mb-4">
+          <h4 className="text-lg font-cinzel mb-2">{section.subHeading}</h4>
+          <ul className="list-disc list-inside">
+            {section.items.map((resp, i) => (
+              <li key={i} className="text-md font-roboto mb-1">
+                {resp}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  ))}
+</div>
     </motion.div>
   );
   };
