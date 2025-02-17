@@ -42,17 +42,17 @@ const About = ({nameLoaded, titleLoaded, infoLoaded, imageLoaded}) => {
           animate={{ opacity: titleLoaded ? 1 : 0, y: titleLoaded ? 0 : 20 }}
           transition={{ duration: 0.5 }}
           >
-          <span className="font-roboto text-4xl lg:text-5xl">Full Stack Engineer</span>
+          <span className="font-roboto text-4xl lg:text-5xl mb-6">Full Stack Engineer</span>
           </motion.div>
-      <motion.p 
+      {/* <motion.p 
         className="mt-2 font-roboto text-xl lg:text-2xl font-light mb-8"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: infoLoaded ? 1 : 0, y: infoLoaded ? 0 : 20 }}
         transition={{ duration: 0.5 }}
       >
-        Born in the UK, living in Tokyo, please take a look at some of the projects I've been working on!
-      </motion.p>
-        <div className="grid grid-cols-1 lg:grid-cols-[auto,1fr] gap-8 items-start">
+        
+      </motion.p> */}
+        <div className="mt-6 grid grid-cols-1 lg:grid-cols-[auto,1fr] gap-8 items-start">
           
         <motion.div 
         className="relative w-[300px] h-[300px] lg:w-[350px] lg:h-[350px]"

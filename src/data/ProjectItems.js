@@ -24,8 +24,15 @@ const ProjectItems = [
         id: uniqid(),
         name: 'Farm BNB',
         stack: ['Ruby', 'Javascript', 'Heroku', 'HTML/CSS'],
-        info: "An application for farmers to rent out their own farm animals and rent animals from other farmers",
+        info: "An application for farmers to rent out their own farm animals and rent animals from other farmers. This was the first app I made from scratch as part of a bootcamp with a team of people. It helped me understand that coding is only a small part of the process but communication, planning and teamwork are just as important",
         img: require('../components/images/farm-bnb.jpg')
+    },
+    {
+        id: uniqid(),
+        name: 'Just The News',
+        stack: ['Python', 'Next.js', 'Tailwind', 'Typescript'],
+        info: "A web application for users to consume the news in a distract free environment, there are no calls to action to other news stories, advertisements, or a requirement to join mailing lists",
+        img: require('../components/images/just_the_news.jpeg')
     },
 ]
 
